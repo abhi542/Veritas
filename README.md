@@ -89,7 +89,13 @@ We separate evaluation because a "Bad Answer" can happen for two different reaso
 2.  **Generation Eval (`test_generation.json`)**: Tests the **LLM's Factuality**. Uses *Keyword Checking*.
     *   *Example*: Query **"What is the maximum LVR for investor loans?"**.
     *   *Check*: The answer *must* contain specific numbers like **"90%"** or **"80%"**. If the LLM explains "Loan to Value Ratio" conceptually but misses the hard cap, it fails compliance.
-3.  **RAGAS Eval (`test_ragas.json`)**: Tests **Complex Reasoning**. Uses *LLM-as-a-Judge*.
+3.  **RAGAS Eval (`test_ragas.json`)**: Tests **Complex Reasoning**.
+    *   **Definition**: In the field of Machine Learning (ML), **RAGAS** is an acronym for *Retrieval-Augmented Generation Assessment Suite*, an open-source framework used for evaluating the performance of RAG pipelines.
+    *   **Metrics Used**:
+        *   **Faithfulness**: Is the answer derived *only* from the context? (Hallucination Check)
+        *   **Answer Relevancy**: Does the answer actually address the user's question?
+        *   **Context Precision**: Did we find relevant chunks at the *top* of the list?
+        *   **Context Recall**: Did we retrieve *all* the necessary information?
     *   *Example*: **"Can a customer with $80k income and $2k monthly liability service a $500k loan?"**
     *   *Reasoning*: Keywords fail here. The answer requires synthesizing "Serviceability Calculator rules" from Page 12 and "Living Expense Floor" from Page 40. Only an AI Judge can grade if the risk assessment logic is sound.
 
@@ -161,6 +167,25 @@ python src/eval_ragas.py --test_file data/test_ragas_synthetic.json --llm_provid
 
 # Get Final Report Card
 python src/aggregate_scores.py
+```
+
+---
+
+### 4. Sample Output Report
+When you run `python src/aggregate_scores.py`, the system generates a unified Health Report:
+
+```text
+--- RAG Quality Index (RQI) Report ---
+
+Retrieval Score (Recall):   0.80  (Weight: 0.4)
+Generation Score (Facts):   0.95  (Weight: 0.3)
+RAGAS Score (Reasoning):    0.72  (Weight: 0.3)
+----------------------------------------
+Final RQI Score:            0.82 / 1.00
+System Grade:               A
+----------------------------------------
+
+[SUCCESS] System is healthy across all metrics.
 ```
 
 ---
