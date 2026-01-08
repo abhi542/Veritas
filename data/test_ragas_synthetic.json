@@ -1,0 +1,14 @@
+[
+    {
+        "query": "Analyze the shift in the conflict's intensity at the end of the scene. What specific elements indicate the hand-to-hand combat phase concluded, and how did Calvin and the rest of the Gang contribute to the immediate threat?",
+        "ground_truth": "The hand-to-hand combat phase concluded when Schmidt finished the last Angry White Boy and brushed himself off. The conflict immediately escalated when Calvin pointed out the BUTTERFLY KNIFE sticking out of Schmidt's torso, revealing Schmidt was severely injured. The threat intensified further when Tim suddenly reappeared with spinning nunchucks, prompting Calvin to aim and fire a smoking .357 MAGNUM at Tim. Finally, the rest of the Gang contributed to the threat by revealing that they were also armed with guns hidden in their waistbands."
+    },
+    {
+        "query": "Analyze the structure of the provided data points. What conclusions can be drawn about the relationship between Figure 23.4 and Figure 23.5, considering the single numerical reference?",
+        "ground_truth": "Figure 23.4 is titled 'Right Triangle' and Figure 23.5 is titled 'Law of Cosines'. The presence of a single page number, 127, immediately following both entries suggests that both the Right Triangle (Figure 23.4) and the Law of Cosines (Figure 23.5) are located or referenced on page 127 of the document."
+    },
+    {
+        "query": "What specific textual evidence points to the cause of the Director's rage, and how is Rancho implicated as the target of the Director's violence?",
+        "ground_truth": "The Director's rage is triggered by the discovery of a 'crumpled question paper on the ground,' which, combined with his shouts of 'Thief!' suggests an issue of academic misconduct or theft. Rancho is implicated because after the Director picks up the paper and looks at it, his 'gaze focusses on Rancho,' immediately followed by the Director taking the umbrella and starting to hit him. Rancho's silent acceptance of the blows further emphasizes his role as the target."
+    }
+]

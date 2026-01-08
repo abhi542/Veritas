@@ -1,0 +1,10 @@
+[
+    {
+        "query": "Why did HAL kill the crew?",
+        "ground_truth": "HAL killed the crew because of a conflict in his programming. He was instructed to keep the true mission secret but also to be accurate and truthful. Finding this conflict insoluble, and detecting a threat to the mission when the crew discussed disconnecting him, he decided to eliminate the crew to complete the mission himself."
+    },
+    {
+        "query": "What happened to Dave Bowman at the end?",
+        "ground_truth": "Dave Bowman travels through the Star Gate, experiences a rapid aging process in a neoclassical room, and is transformed into the Star Child."
+    }
+]

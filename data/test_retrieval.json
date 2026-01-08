@@ -1,0 +1,62 @@
+[
+    {
+        "query": "What is the Transformer architecture?",
+        "expected_keywords": [
+            "Transformer",
+            "attention",
+            "mechanism",
+            "encoder",
+            "decoder"
+        ]
+    },
+    {
+        "query": "Why did HAL 9000 malfunction?",
+        "expected_keywords": [
+            "HAL",
+            "error",
+            "mission",
+            "conflict",
+            "Dave"
+        ]
+    },
+    {
+        "query": "Who are the main characters in 3 Idiots?",
+        "expected_keywords": [
+            "Rancho",
+            "Farhan",
+            "Raju",
+            "Virus",
+            "Chatur"
+        ]
+    },
+    {
+        "query": "What is the premise of 21 Jump Street?",
+        "expected_keywords": [
+            "undercover",
+            "high school",
+            "police",
+            "drugs",
+            "Schmidt",
+            "Jenko"
+        ]
+    },
+    {
+        "query": "How to define a function in Python?",
+        "expected_keywords": [
+            "def",
+            "function",
+            "return",
+            "arguments",
+            "parameter"
+        ]
+    },
+    {
+        "query": "What are the benefits of self-attention?",
+        "expected_keywords": [
+            "computational",
+            "parallelizable",
+            "dependency",
+            "distance"
+        ]
+    }
+]

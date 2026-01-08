@@ -1,0 +1,32 @@
+[
+    {
+        "query": "Describe the immediate aftermath of Schmidt defeating the final Angry White Boy, focusing on Schmidt's injury and the subsequent actions of Tim and Calvin.",
+        "expected_keywords": [
+            "butterfly knife",
+            "torso",
+            "Calvin",
+            "nunchucks",
+            ".357 MAGNUM"
+        ]
+    },
+    {
+        "query": "Summarize the content presented in the list of figures and their associated page number.",
+        "expected_keywords": [
+            "Figure 23.4",
+            "Right Triangle",
+            "Law of Cosines",
+            "Figure 23.5",
+            "127"
+        ]
+    },
+    {
+        "query": "Summarize the confrontation that occurred after the Director entered the room, detailing what he found and how he responded to the students.",
+        "expected_keywords": [
+            "Director",
+            "umbrella",
+            "Rancho",
+            "question paper",
+            "pleading"
+        ]
+    }
+]

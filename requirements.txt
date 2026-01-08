@@ -1,0 +1,17 @@
+langchain
+pypdf
+faiss-cpu
+tqdm
+numpy
+python-dotenv
+sentence-transformers
+scikit-learn
+google-cloud-aiplatform
+ragas
+datasets
+openai
+matplotlib
+seaborn
+pandas
+langchain-google-genai
+langchain-huggingface

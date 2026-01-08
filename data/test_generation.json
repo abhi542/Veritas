@@ -1,0 +1,21 @@
+[
+    {
+        "query": "Explain the role of HAL 9000.",
+        "expected_keywords": [
+            "computer",
+            "ship",
+            "control",
+            "malfunction",
+            "kill"
+        ]
+    },
+    {
+        "query": "What is the Monolith?",
+        "expected_keywords": [
+            "alien",
+            "evolution",
+            "beacon",
+            "black"
+        ]
+    }
+]

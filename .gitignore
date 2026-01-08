@@ -1,0 +1,45 @@
+# Environment Variables
+.env
+.env.local
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# FAISS Index (Optional - usually we don't commit large binary indices, but for this demo maybe user wants to. 
+# I will exclude it to be safe and keep repo small, as it can be regenerated)
+data/faiss_index/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Artifacts
+data/results/

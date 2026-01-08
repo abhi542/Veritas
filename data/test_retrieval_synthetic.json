@@ -1,0 +1,32 @@
+[
+    {
+        "query": "What object was sticking out of Schmidt's torso when Calvin drew his attention to it?",
+        "expected_keywords": [
+            "BUTTERFLY KNIFE",
+            "torso",
+            "Calvin",
+            "Schmidt",
+            "sticking"
+        ]
+    },
+    {
+        "query": "What figures are listed along with page 127, and what geometric concepts do they represent?",
+        "expected_keywords": [
+            "Figure 23.4",
+            "Figure 23.5",
+            "Right Triangle",
+            "Law of Cosines",
+            "127"
+        ]
+    },
+    {
+        "query": "Who pleaded with the Director to stop hitting Rancho?",
+        "expected_keywords": [
+            "Farhan",
+            "Raju",
+            "pleading",
+            "call out",
+            "stop"
+        ]
+    }
+]
