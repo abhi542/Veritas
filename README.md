@@ -60,7 +60,7 @@ The system operates in two distinct phases, designed for scalability and traceab
 4.  **Indexing**: These vectors are saved into a **FAISS Index**.
 
 ### Phase 2: Retrieval & Generation (Runtime)
-1.  **User Query**: You ask "Who is HAL 9000?".
+1.  **User Query**: You ask "What is the maximum LVR for investor loans?".
 2.  **Vector Search**: The system converts your question into a vector and searches the FAISS index to find the 3 paragraphs that are mathematically "closest" to your question.
 3.  **Prompt Construction**: It combines your question + the 3 found paragraphs into a single prompt.
 4.  **Generation**: It sends this prompt to the LLM (e.g., Gemini).
@@ -90,7 +90,7 @@ We separate evaluation because a "Bad Answer" can happen for two different reaso
     *   *Example*: Query **"What is the maximum LVR for investor loans?"**.
     *   *Check*: The answer *must* contain specific numbers like **"90%"** or **"80%"**. If the LLM explains "Loan to Value Ratio" conceptually but misses the hard cap, it fails compliance.
 3.  **RAGAS Eval (`test_ragas.json`)**: Tests **Complex Reasoning**.
-    *   **Definition**: In the field of Machine Learning (ML), **RAGAS** is an acronym for *Retrieval-Augmented Generation Assessment Suite*, an open-source framework used for evaluating the performance of RAG pipelines.
+    *   **Definition**: **RAGAS** (Retrieval-Augmented Generation Assessment Suite) is an open-source framework used for evaluating the performance of RAG pipelines.
     *   **Metrics Used**:
         *   **Faithfulness**: Is the answer derived *only* from the context? (Hallucination Check)
         *   **Answer Relevancy**: Does the answer actually address the user's question?
