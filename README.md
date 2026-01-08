@@ -19,12 +19,12 @@ The system is built on a modular "Ingest-Retrieve-Generate" pipeline using **Lan
 
 ```mermaid
 graph LR
-    A[PDF Documents] -->|Ingest & Chunk| B(Load Docs)
-    B -->|Embed vectors| C{FAISS Index}
-    D[User Query] -->|Search| C
-    C -->|Top 3 Chunks| E[Context + Prompt]
-    E -->|Generate| F[LLM (Gemini)]
-    F -->|Answer| G[Final Output]
+    A["PDF Documents"] -->|Ingest & Chunk| B("Load Docs")
+    B -->|Embed vectors| C{"FAISS Index"}
+    D["User Query"] -->|Search| C
+    C -->|Top 3 Chunks| E["Context + Prompt"]
+    E -->|Generate| F["LLM (Gemini)"]
+    F -->|Answer| G["Final Output"]
     
     style C fill:#f9f,stroke:#333,stroke-width:2px
     style F fill:#bbf,stroke:#333,stroke-width:2px
